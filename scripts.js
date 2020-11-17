@@ -1,8 +1,6 @@
 function onlyPositives(arr) {
-    let results = [];
-    arr.forEach(element => {
-        if(element %2 == 0)
-            results.push(element);
+    let results = arr.filter( (a) => {
+        return a > 0;
     });
     
     document.getElementById("results").innerHTML = "\nChallenge1: \n" + results;
